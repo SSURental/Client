@@ -1,0 +1,165 @@
+@import "reset.css";
+
+* {
+  margin: 0 auto;
+  text-decoration-line: none;
+}
+
+/* 타이틀 로고 */
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.titleLogoLeft {
+  color: #68c9d1;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.titleLogoRight {
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* 회원가입,로그인 창 */
+
+.signUpTitle,
+.loginTitle {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.signUpNameInputTitle,
+.signUpIdInputTitle,
+.signUpPasswordInputTitle,
+.loginIdInputTitle,
+.loginPasswordInputTitle {
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8e8e8e;
+
+  width: 420px;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.signUpNameInput,
+.signUpIdInput,
+.signUpPasswordInput,
+.loginIdInput,
+.loginPasswordInput {
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  width: 400px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+
+#signUpInputName,
+#signUpInputId,
+#signUpInputPassword,
+#loginInputId,
+#loginInputPassword {
+  width: 90%;
+  border: none;
+  background-color: #eeeeee;
+  appearance: none;
+  text-decoration: none;
+  outline: 0;
+  color: #8e8e8e;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Noto Sans KR";
+}
+
+.signUpSubmitBtn {
+  margin: 0 auto;
+  margin-top: 64px;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #68c9d1;
+  /* background-color: #8e8e8e; */
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-bottom: 62px;
+}
+
+#signUpSubmitBtn {
+  border: none;
+  background-color: #68c9d1;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Noto Sans KR";
+  cursor: pointer;
+}
+
+.loginSubmitBtn {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #68c9d1;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#loginSubmitBtn {
+  border: none;
+  background-color: #68c9d1;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Noto Sans KR";
+  cursor: pointer;
+}
+
+.loginAskMember {
+  margin-top: 80px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.loginSignUpBtn {
+  margin-top: 10px;
+  margin-bottom: 200px; /*소셜 로그인 추가 되면 수정*/
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #68c9d1;
+}
