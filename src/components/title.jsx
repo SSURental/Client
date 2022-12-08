@@ -1,6 +1,6 @@
 import React from "react";
 
-const title = () => {
+const Title = () => {
   return (
     <div className="title">
       <span className="titleLogoLeft">SSU</span>
@@ -9,4 +9,4 @@ const title = () => {
   );
 };
 
-export default title;
+export default Title;

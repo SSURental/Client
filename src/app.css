@@ -1,8 +1,111 @@
 @import "reset.css";
 
 * {
-  margin: 0 auto;
   text-decoration-line: none;
+}
+
+/* 네비게이션 바 */
+
+.navbar {
+  height: 120px;
+  /* background-color: #8e8e8e; */
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+.navbarContainer {
+  display: flex;
+  width: 66.6%;
+  /* background-color:aquamarine; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarLeftContainer {
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbarMenu {
+  display: flex;
+  align-items: center;
+}
+
+.navbarMenuItem {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.navbarRightContainer {
+  display: flex;
+  /* background-color: antiquewhite; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarSearch {
+  display: flex;
+  padding-right: 70px;
+}
+
+.navbarSearchBox {
+  display: flex;
+  width: 411px;
+  height: 58px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarSearchBox input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 24px;
+  border: 0;
+  outline: none;
+  background-color: #eeeeee;
+}
+
+.navbarSearchBox button {
+  border: none;
+  padding-right: 17px;
+}
+
+.navbarIcons {
+  display: flex;
+}
+
+.navbarBellIcon,
+.navbarMypageIcon {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbarLogo {
+  text-align: center;
+  width: 270px;
+  height: 47px;
+  line-height: 47px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  padding-left: 20px;
+  padding-right: 40px;
 }
 
 /* 타이틀 로고 */
@@ -162,4 +265,157 @@
   font-weight: 700;
   font-size: 16px;
   color: #68c9d1;
+}
+
+/* 메인 페이지(랭킹) */
+
+.Page {
+  margin: 30px 380px 0 380px;
+}
+
+.rank {
+  padding-top: 56px;
+  /* background-color: #33c207; */
+}
+
+.rankSecond {
+  padding-top: 56px;
+  margin-bottom: 70px;
+}
+
+.rankContainer {
+  display: flex;
+  /* margin-top: 56px; */
+  align-items: center;
+  /* background-color: #68c9d1; */
+}
+
+.rankTitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+  margin-left: 16px;
+  margin-right: 23px;
+  /* background-color: #ed7dc8; */
+}
+
+.rankSubTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e8e8e;
+  /* background-color: #d9d9d9; */
+}
+
+.rankBoxContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rankBoxContainerBoard {
+  margin-top: 40px;
+}
+
+/* 대여물품 박스 */
+
+.productBoxImage {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.productBoxRankNumber {
+  position: absolute;
+  margin: 10px 0 0 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #68c9d1;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.productBoxTitle {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.productBoxPrice {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* 게시물 박스 */
+.articleBoxContainer {
+  margin: 20px 0 20px 0;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px;
+  background-color: #eeeeee;
+}
+
+.articleBox {
+  margin-left: 30px;
+  width: 700px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.articleBoxNumber {
+  width: 50px;
+  height: 50px;
+  background-color: #68c9d1;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.articleBoxProfile {
+  margin-left: 50px;
+}
+
+.articleBoxProfileImage {
+  margin-left: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+}
+
+.articleBoxProfileName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.articleBoxProfileGrade {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.articleBoxContent {
+  margin-left: 50px;
+}
+
+.articleBoxContentTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.articleBoxContentMiniTitle {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
 }

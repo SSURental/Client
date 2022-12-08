@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Title from "../components/title";
 
 const Login = () => {
+
+  const [loginId, setLoginId] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleIdChange = (e) => {
+     setLoginId(e.target.value);
+  }  
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+ }  
+
+ const handleSubmitLogin = () => {
+  const body = {
+    loginId,
+    password
+  }
+   
+  // const loginApi = await axios.post(``, body);
+
+ }
+
   return (
     <>
       <Link to="/">
@@ -17,6 +39,7 @@ const Login = () => {
             type="text"
             name="name"
             placeholder="아이디를 입력하세요."
+            onChange={handleIdChange}
           ></input>
         </div>
       </div>
@@ -28,6 +51,7 @@ const Login = () => {
             type="text"
             name="name"
             placeholder="비밀번호를 입력하세요."
+            onChange={handlePasswordChange}
           ></input>
         </div>
       </div>
@@ -38,6 +62,7 @@ const Login = () => {
           type="submit"
           name="submit"
           value="로그인하기"
+          onClick={handleSubmitLogin}
         />
       </div>
       <div className="loginAskMember">아직 SSURENTAL 회원이 아니신가요?</div>
