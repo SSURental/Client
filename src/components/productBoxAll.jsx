@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductBoxStudent = (props) => {
+const ProductBoxAll = (props) => {
   return (
     <>
       <div className="productBoxStudent">
@@ -12,4 +12,4 @@ const ProductBoxStudent = (props) => {
   );
 };
 
-export default ProductBoxStudent;
+export default ProductBoxAll;

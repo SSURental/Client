@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/navbar";
 import { FaListAlt } from "react-icons/fa";
-import ProductBoxStudent from "../components/productBoxStudent";
+import ProductBoxAll from "../components/productBoxAll";
 
 const Rent = () => {
   const [isClicked, setIsClicked] = useState(true);
@@ -22,7 +22,8 @@ const Rent = () => {
   ];
 
   return (
-    <>
+    <div className="totalPage">
+      {isClicked === false ? <div className="rentPostBtn">+</div> : <></>}
       <Navbar />
       <div className="Page">
         <div className="rentTitle">
@@ -57,7 +58,7 @@ const Rent = () => {
           {isClicked === !true
             ? products.map((product) => {
                 return (
-                  <ProductBoxStudent
+                  <ProductBoxAll
                     index={product.index}
                     title={product.title}
                     price={product.price}
@@ -66,7 +67,7 @@ const Rent = () => {
               })
             : products.map((product) => {
                 return (
-                  <ProductBoxStudent
+                  <ProductBoxAll
                     index={product.index}
                     title={product.title}
                     price={"학교 제품"}
@@ -75,7 +76,7 @@ const Rent = () => {
               })}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
