@@ -319,6 +319,11 @@
 
 /* 대여물품 박스 */
 
+.productBoxStudent {
+  flex: 1 1 25%;
+  margin-top: 30px;
+}
+
 .productBoxImage {
   position: relative;
   width: 250px;
@@ -418,4 +423,67 @@
   margin-top: 10px;
   font-size: 15px;
   font-weight: 500;
+}
+
+/* 대여하기 창 */
+
+.rentProductContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.rentTitle {
+  margin-top: 80px;
+}
+
+.rentSchoolStudentClicked {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.rentSchoolStudentNotClicked {
+  font-size: 20px;
+  font-weight: 400;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.rentStudentStudentClicked {
+  margin-left: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.rentStudentStudentNotClicked {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.rentProductTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.rentContainer {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.rentProductTitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+  margin-left: 16px;
+  margin-right: 23px;
 }
