@@ -510,9 +510,6 @@
   box-shadow: 5px 5px 5px #d9d9d9;
 }
 
-.rentPostBtnNone {
-  display: block;
-}
 /* 게시판 창 */
 
 .boardTitleContainer {
@@ -567,4 +564,246 @@
   font-weight: bold;
   font-size: 50px;
   box-shadow: 5px 5px 5px #d9d9d9;
+}
+
+/* 제품 상세 창 */
+.productContainer {
+  margin-top: 100px;
+  display: flex;
+}
+
+.productImage {
+  width: 650px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+}
+
+.productDetail {
+  width: 650px;
+  height: 500px;
+  margin-left: 50px;
+}
+
+.productUserContainer {
+  display: flex;
+}
+
+.productUserProfile {
+  display: flex;
+}
+
+.productUserProfileImage {
+  width: 70px;
+  height: 70px;
+  background-color: #eeeeee;
+  border-radius: 50px;
+}
+
+.productUserProfileDetail {
+  margin-left: 20px;
+  height: 70px;
+  line-height: 35px;
+}
+
+.productUserProfileDetailName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.productUserProfileDetailComment {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.productUserChatBtn {
+  margin-left: auto;
+  margin-top: 5px;
+  width: 120px;
+  height: 60px;
+  background-color: #68c9d1;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.productSidebar {
+  margin-top: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+.productTitle {
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.productPrice {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.productComment {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.productBtn {
+  display: flex;
+  margin-top: 160px;
+}
+
+.productLikeBtn {
+  width: 150px;
+  height: 60px;
+  background-color: #e1605c;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+.productLikeNum {
+  margin-left: 10px;
+}
+
+.productPurchaseBtn {
+  margin-left: 20px;
+  width: 150px;
+  height: 60px;
+  background-color: #68c9d1;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+.productReviewContainer {
+  margin-top: 50px;
+}
+
+.productReviewTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.productReviewNum {
+  font-size: 20px;
+  color: #8e8e8e;
+  margin-left: 10px;
+}
+
+#productReviewInput {
+  width: 90%;
+  border: none;
+  background-color: white;
+  appearance: none;
+  text-decoration: none;
+  outline: 0;
+  color: #8e8e8e;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Noto Sans KR";
+}
+
+.productReviewInput {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  width: 96%;
+  height: 180px;
+  line-height: 60px;
+  background-color: white;
+  border: 15px solid #eeeeee;
+  border-radius: 10px;
+}
+
+.productReviewBtnContainer {
+  display: flex;
+}
+
+.productReviewBtn {
+  margin-left: auto;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #68c9d1;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#productReviewBtn {
+  border: none;
+  background-color: #68c9d1;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Noto Sans KR";
+  cursor: pointer;
+}
+
+.reviewContainer {
+  display: flex;
+  margin-top: 30px;
+}
+
+.reviewUserProfile {
+  display: flex;
+}
+
+.reviewUserProfileImage {
+  width: 70px;
+  height: 70px;
+  background-color: #eeeeee;
+  border-radius: 50px;
+}
+
+.reviewUserProfileDetail {
+  margin-left: 20px;
+  height: 70px;
+  line-height: 35px;
+}
+
+.reviewUserProfileDetailName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reviewUserProfileDetailComment {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.reviewSidebar {
+  margin-left: 50px;
+  width: 2px;
+  height: 70x;
+  background-color: #d9d9d9;
+}
+
+.review {
+  margin-left: 40px;
+  font-size: 18px;
+  height: 70px;
+  line-height: 70px;
+}
+
+.productReviewContainer {
+  margin-bottom: 70px;
 }
