@@ -1,29 +1,39 @@
+import axios from "axios";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Title from "../components/title";
 
 const Login = () => {
-
   const [loginId, setLoginId] = useState("");
   const [password, setPassword] = useState("");
 
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const navigate = useNavigate();
+
   const handleIdChange = (e) => {
-     setLoginId(e.target.value);
-  }  
+    setLoginId(e.target.value);
+  };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
- }  
+  };
 
- const handleSubmitLogin = () => {
-  const body = {
-    loginId,
-    password
-  }
-   
-  // const loginApi = await axios.post(``, body);
+  const handleSubmitLogin = async () => {
+    const body = {
+      loginId,
+      password,
+    };
 
- }
+    const loginApi = await axios.get(`http://localhost:3000/login`, body);
+
+    if (loginApi.data.code === 2000) {
+      localStorage.setItem("token", loginApi.data.result);
+      navigate("/");
+    } else {
+      setErrorMessage("로그인 불가");
+    }
+  };
 
   return (
     <>

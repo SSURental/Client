@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Title from "../components/title";
 
 const SignUp = () => {
@@ -9,6 +9,10 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const memberGroup = "SCHOOL";
   const ImageDTO = { imageName: "xxawqez-234124" };
+
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const navigate = useNavigate();
 
   const handleIdChange = (e) => {
     setLoginId(e.target.value);
@@ -22,7 +26,7 @@ const SignUp = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmitSignUp = () => {
+  const handleSubmitSignUp = async () => {
     const body = {
       loginId,
       password,
@@ -31,9 +35,14 @@ const SignUp = () => {
       ImageDTO,
     };
 
-    console.log(body);
+    const signUpApi = await axios.post(`http://localhost:8080/members`, body);
+    console.log(signUpApi);
 
-    // const singUpApi = await axios.post(``, body);
+    if (signUpApi.data.code === 200) {
+      navigate("/login");
+    } else {
+      setErrorMessage("회원가입 불가");
+    }
   };
 
   return (
