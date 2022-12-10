@@ -2,8 +2,10 @@ import React from "react";
 import Navbar from "../components/navbar";
 import { FaListAlt } from "react-icons/fa";
 import ArticleBoxAll from "../components/articleBoxAll";
+import { useNavigate } from "react-router-dom";
 
 const Board = () => {
+  const navigate = useNavigate();
   const Articles = [
     {
       index: "1",
@@ -50,7 +52,9 @@ const Board = () => {
   ];
   return (
     <div className="TotalPage">
-      <div className="boardPostBtn">+</div>
+      <div className="boardPostBtn" onClick={() => navigate("/board/enroll")}>
+        +
+      </div>
       <Navbar />
       <div className="Page">
         <div className="boardTitleContainer">

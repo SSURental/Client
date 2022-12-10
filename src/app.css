@@ -493,6 +493,7 @@
 }
 
 .rentPostBtn {
+  cursor: pointer;
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -549,6 +550,7 @@
 }
 
 .boardPostBtn {
+  cursor: pointer;
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -617,6 +619,7 @@
 }
 
 .productUserChatBtn {
+  cursor: pointer;
   margin-left: auto;
   margin-top: 5px;
   width: 120px;
@@ -660,6 +663,7 @@
 }
 
 .productLikeBtn {
+  cursor: pointer;
   width: 150px;
   height: 60px;
   background-color: #e1605c;
@@ -676,6 +680,7 @@
 }
 
 .productPurchaseBtn {
+  cursor: pointer;
   margin-left: 20px;
   width: 150px;
   height: 60px;
@@ -734,6 +739,7 @@
 }
 
 .productReviewBtn {
+  cursor: pointer;
   margin-left: auto;
   width: 150px;
   height: 60px;
@@ -748,6 +754,7 @@
 }
 
 #productReviewBtn {
+  cursor: pointer;
   border: none;
   background-color: #68c9d1;
   color: #ffffff;
@@ -940,6 +947,7 @@
 }
 
 .productEnrollBtn {
+  cursor: pointer;
   margin-left: auto;
   margin-bottom: 50px;
   width: 150px;
@@ -955,6 +963,239 @@
 }
 
 #productEnrollBtn {
+  cursor: pointer;
+  border: none;
+  background-color: #68c9d1;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Noto Sans KR";
+  cursor: pointer;
+}
+
+/* 게시물 상세 페이지 창 */
+
+.articleUserContainer {
+  display: flex;
+  margin-top: 80px;
+}
+
+.articleUserProfile {
+  display: flex;
+}
+
+.articleUserProfileImage {
+  width: 70px;
+  height: 70px;
+  background-color: #eeeeee;
+  border-radius: 50px;
+}
+
+.articleUserProfileDetail {
+  margin-left: 20px;
+  height: 70px;
+  line-height: 35px;
+}
+
+.articleUserProfileDetailName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.articleUserProfileDetailComment {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.articleUserBtn {
+  display: flex;
+  margin-left: auto;
+}
+
+.articleUserChatBtn {
+  cursor: pointer;
+  margin-top: 5px;
+  width: 120px;
+  height: 60px;
+  background-color: #68c9d1;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.articleUserReportBtn {
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 120px;
+  height: 60px;
+  background-color: #e1605c;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.articleSidebar {
+  margin-top: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+.articleContentTitleContainer {
+  display: flex;
+  margin-top: 50px;
+}
+
+.articleContentTitle {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.articleContentTitleBtn {
+  margin-left: auto;
+  display: flex;
+}
+
+.articleContentTitleLikeBtn {
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+  background-color: #e1605c;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.articleContentTitleHateBtn {
+  cursor: pointer;
+  margin-left: 10px;
+  width: 150px;
+  height: 60px;
+  background-color: #5c79e1;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.articleNum {
+  margin-left: 10px;
+}
+
+.articleContent {
+  height: 300px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+/* 게시물 등록 창 */
+
+.articleEnrollTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  margin-top: 80px;
+}
+
+.articleEnrollMiniTitle {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.articleEnrollSidebar {
+  margin-top: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+.articleEnrollNameContainer {
+  display: flex;
+}
+
+.articleEnrollNameTitle {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.articleEnrollNameInput {
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-right: 20px;
+}
+
+#articleEnrollNameInput {
+  font-size: 20px;
+  font-family: "Noto Sans KR";
+  height: 40px;
+  width: 300px;
+}
+
+.articleEnrollDetailContainer {
+  display: flex;
+}
+
+.articleEnrollDetailTitle {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.articleEnrollDetailInput {
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-right: 20px;
+}
+
+#articleEnrollDetailInput {
+  font-size: 20px;
+  font-family: "Noto Sans KR";
+  height: 200px;
+  width: 1000px;
+}
+
+.articleEnrollBtnContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.articleEnrollBtn {
+  cursor: pointer;
+  margin-left: auto;
+  margin-bottom: 50px;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #68c9d1;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#articleEnrollBtn {
+  cursor: pointer;
   border: none;
   background-color: #68c9d1;
   color: #ffffff;

@@ -1,10 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ArticleBoxAll = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="articleBoxContainer">
-        <div className="articleBox">
+        <div
+          className="articleBox"
+          onClick={() => {
+            navigate("/board/article", { state: props });
+          }}
+        >
           <div className="articleBoxProfileImage"></div>
           <div className="articleBoxProfile">
             <div className="articleBoxProfileName">{props.name}</div>

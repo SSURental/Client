@@ -5,7 +5,7 @@ const ProductBoxAll = (props) => {
   const navigate = useNavigate();
 
   const handleProduct = () => {
-    navigate("/product", { state: props });
+    navigate("/rent/product", { state: props });
   };
 
   return (

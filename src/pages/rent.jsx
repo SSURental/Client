@@ -30,7 +30,7 @@ const Rent = () => {
         <div
           className="rentPostBtn"
           onClick={() => {
-            navigate("/rent/eroll");
+            navigate("/rent/enroll");
           }}
         >
           +
