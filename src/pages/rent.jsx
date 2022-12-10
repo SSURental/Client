@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import Navbar from "../components/navbar";
 import { FaListAlt } from "react-icons/fa";
 import ProductBoxAll from "../components/productBoxAll";
+import { useNavigate } from "react-router-dom";
 
 const Rent = () => {
   const [isClicked, setIsClicked] = useState(true);
+
+  const navigate = useNavigate();
 
   const products = [
     { index: "1", title: "우산", price: "1000원", state: true },
@@ -23,7 +26,18 @@ const Rent = () => {
 
   return (
     <div className="totalPage">
-      {isClicked === false ? <div className="rentPostBtn">+</div> : <></>}
+      {isClicked === false ? (
+        <div
+          className="rentPostBtn"
+          onClick={() => {
+            navigate("/rent/eroll");
+          }}
+        >
+          +
+        </div>
+      ) : (
+        <></>
+      )}
       <Navbar />
       <div className="Page">
         <div className="rentTitle">

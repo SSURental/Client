@@ -807,3 +807,160 @@
 .productReviewContainer {
   margin-bottom: 70px;
 }
+
+/* 상품 등록 창 */
+
+.productEnrollTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  margin-top: 80px;
+}
+
+.productEnrollMiniTitle {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.productEnrollSidebar {
+  margin-top: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+.productEnrollImageContatiner {
+  display: flex;
+}
+
+.productEnrollImageTitle {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.productEnrollImageInput {
+  margin-top: 20px;
+  margin-left: 70px;
+  width: 300px;
+  height: 300px;
+  background-color: #eeeeee;
+}
+
+.productEnrollImageInputText {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #8e8e8e;
+}
+
+.productEnrollImageIcon {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.productEnrollNameContainer {
+  display: flex;
+}
+
+.productEnrollNameTitle {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.productEnrollNameInput {
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+#productEnrollNameInput {
+  font-size: 20px;
+  font-family: "Noto Sans KR";
+  height: 40px;
+  width: 400px;
+}
+
+.productEnrollPriceContainer {
+  display: flex;
+}
+
+.productEnrollPriceTitle {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.productEnrollPriceInput {
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-right: 20px;
+}
+
+#productEnrollPriceInput {
+  font-size: 20px;
+  font-family: "Noto Sans KR";
+  height: 40px;
+  width: 300px;
+}
+
+.productEnrollDetailContainer {
+  display: flex;
+}
+
+.productEnrollDetailTitle {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.productEnrollDetailInput {
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-right: 20px;
+}
+
+#productEnrollDetailInput {
+  font-size: 20px;
+  font-family: "Noto Sans KR";
+  height: 200px;
+  width: 1000px;
+}
+
+.productEnrollBtnContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.productEnrollBtn {
+  margin-left: auto;
+  margin-bottom: 50px;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #68c9d1;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#productEnrollBtn {
+  border: none;
+  background-color: #68c9d1;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Noto Sans KR";
+  cursor: pointer;
+}

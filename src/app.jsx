@@ -7,6 +7,7 @@ import Rent from "./pages/rent";
 import Board from "./pages/board";
 import Chat from "./pages/chat";
 import Product from "./components/product";
+import ProductEnroll from "./pages/productEnroll";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/board" element={<Board />}></Route>
           <Route exact path="/chat" element={<Chat />}></Route>
           <Route exact path="/product" element={<Product />}></Route>
+          <Route exact path="/rent/eroll" element={<ProductEnroll />}></Route>
         </Routes>
       </BrowserRouter>
     </>
