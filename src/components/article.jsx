@@ -7,6 +7,7 @@ const Article = () => {
   const { state } = useLocation();
   const [likeCount, setLikeCount] = useState(12);
   const [hateCount, setHateCount] = useState(1);
+  const [review, setReview] = useState("");
 
   const reviews = [
     { userId: "User1", userGrade: "대학교 1학년", review: "괜찮고 쓸만해요!" },
@@ -69,6 +70,9 @@ const Article = () => {
               type="text"
               name="name"
               placeholder="댓글을 입력하세요."
+              onChange={(e) => {
+                setReview(e.target.value);
+              }}
             ></input>
           </div>
           <div className="productReviewBtnContainer">

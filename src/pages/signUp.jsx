@@ -38,11 +38,11 @@ const SignUp = () => {
     const signUpApi = await axios.post(`http://localhost:8080/members`, body);
     console.log(signUpApi);
 
-    if (signUpApi.data.code === 200) {
-      navigate("/login");
-    } else {
-      setErrorMessage("회원가입 불가");
-    }
+    // if (signUpApi.data.code === 200) {
+    //   navigate("/login");
+    // } else {
+    //   setErrorMessage("회원가입 불가");
+    // }
   };
 
   return (
