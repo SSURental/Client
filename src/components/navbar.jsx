@@ -1,10 +1,12 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
 import { BsBellFill } from "react-icons/bs";
-import { FaUserCircle } from "react-icons/fa";
+import { FaUserCircle, FaUserPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const token = localStorage.getItem("token");
+
   return (
     <>
       <nav className="navbar">
@@ -81,15 +83,27 @@ const Navbar = () => {
               </li>
               <li className="navbarMypageIcon">
                 <Link to="/login">
-                  <span>
-                    <FaUserCircle
-                      color="#C2C2C2"
-                      size="35px"
-                      style={{
-                        cursor: "pointer",
-                      }}
-                    />
-                  </span>
+                  {token === null ? (
+                    <span>
+                      <FaUserPlus
+                        color="#C2C2C2"
+                        size="35px"
+                        style={{
+                          cursor: "pointer",
+                        }}
+                      />
+                    </span>
+                  ) : (
+                    <span>
+                      <FaUserCircle
+                        color="#C2C2C2"
+                        size="35px"
+                        style={{
+                          cursor: "pointer",
+                        }}
+                      />
+                    </span>
+                  )}
                 </Link>
               </li>
             </ul>
