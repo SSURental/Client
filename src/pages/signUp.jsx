@@ -1,18 +1,19 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Modal from "../components/modal";
 import Title from "../components/title";
 
 const SignUp = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const [loginId, setLoginId] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const memberGroup = "SCHOOL";
-  const ImageDTO = { imageName: "xxawqez-234124" };
-
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const navigate = useNavigate();
+  const imageDTO = {
+    imgName: "xxawqez-234124",
+  };
 
   const handleIdChange = (e) => {
     setLoginId(e.target.value);
@@ -32,21 +33,25 @@ const SignUp = () => {
       password,
       name,
       memberGroup,
-      ImageDTO,
+      imageDTO,
     };
 
-    const signUpApi = await axios.post(`http://localhost:8080/members`, body);
+    const signUpApi = await axios.post(
+      `http://52.78.109.162:8080/members`,
+      body
+    );
+
     console.log(signUpApi);
 
-    // if (signUpApi.data.code === 200) {
-    //   navigate("/login");
-    // } else {
-    //   setErrorMessage("회원가입 불가");
-    // }
+    if (signUpApi.status === 201) {
+      localStorage.setItem("memberId", signUpApi.data);
+      setIsOpen(true);
+    }
   };
 
   return (
     <>
+      {isOpen && <Modal isOpen={isOpen} moveLogin={() => setIsOpen(false)} />}
       <Link to="/">
         <Title />
       </Link>

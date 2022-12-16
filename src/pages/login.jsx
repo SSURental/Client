@@ -7,8 +7,6 @@ const Login = () => {
   const [loginId, setLoginId] = useState("");
   const [password, setPassword] = useState("");
 
-  const [errorMessage, setErrorMessage] = useState("");
-
   const navigate = useNavigate();
 
   const handleIdChange = (e) => {
@@ -25,13 +23,13 @@ const Login = () => {
       password,
     };
 
-    const loginApi = await axios.get(`http://localhost:3000/login`, body);
+    const loginApi = await axios.post(`http://52.78.109.162:8080/login`, body);
 
-    if (loginApi.data.code === 2000) {
-      localStorage.setItem("token", loginApi.data.result);
+    console.log(loginApi);
+
+    if (loginApi.status === 201) {
+      localStorage.setItem("token", loginApi.data);
       navigate("/");
-    } else {
-      setErrorMessage("로그인 불가");
     }
   };
 
@@ -58,8 +56,8 @@ const Login = () => {
         <div className="loginPasswordInput">
           <input
             id="loginInputPassword"
-            type="text"
-            name="name"
+            type="password"
+            name="password"
             placeholder="비밀번호를 입력하세요."
             onChange={handlePasswordChange}
           ></input>

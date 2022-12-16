@@ -6,7 +6,9 @@ const ArticleBox = (props) => {
       <div className="articleBoxContainer">
         <div className="articleBox">
           <div className="articleBoxNumber">{props.rank}</div>
-          <div className="articleBoxProfileImage"></div>
+          <div className="articleBoxProfileImage">
+            <img src={props.src} className="articleBoxProfileImg"></img>
+          </div>
           <div className="articleBoxProfile">
             <div className="articleBoxProfileName">{props.name}</div>
             <div className="articleBoxProfileGrade">{props.grade}</div>
