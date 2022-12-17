@@ -11,7 +11,9 @@ const ProductBoxAll = (props) => {
   return (
     <>
       <div className="productBoxStudent">
-        <div className="productBoxImage" onClick={handleProduct}></div>
+        <div className="productBoxImage" onClick={handleProduct}>
+          <img src={props.src} className="productBoxAllImg"></img>
+        </div>
         <div className="productBoxTitle">{props.title}</div>
         <div className="productBoxPrice">{props.price}</div>
       </div>

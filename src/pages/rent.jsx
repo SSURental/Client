@@ -10,18 +10,90 @@ const Rent = () => {
   const navigate = useNavigate();
 
   const products = [
-    { index: "1", title: "우산", price: "1000원", state: true },
-    { index: "2", title: "천막 세트", price: "20000원", state: true },
-    { index: "3", title: "공학용 계산기", price: "1500원", state: true },
-    { index: "4", title: "C프로그래밍 교재", price: "2000원", state: true },
-    { index: "5", title: "우산", price: "1000원", state: true },
-    { index: "6", title: "천막 세트", price: "20000원", state: true },
-    { index: "7", title: "공학용 계산기", price: "1500원", state: true },
-    { index: "8", title: "C프로그래밍 교재", price: "2000원", state: true },
-    { index: "9", title: "우산", price: "1000원", state: true },
-    { index: "10", title: "천막 세트", price: "20000원", state: true },
-    { index: "11", title: "공학용 계산기", price: "1500원", state: true },
-    { index: "12", title: "C프로그래밍 교재", price: "2000원", state: true },
+    {
+      index: "1",
+      title: "볼펜",
+      price: "1000원",
+      state: true,
+      src: "img/pen.png",
+    },
+    {
+      index: "2",
+      title: "무선마우스",
+      price: "3000원",
+      state: true,
+      src: "img/mouse.png",
+    },
+    {
+      index: "3",
+      title: "공학용 계산기",
+      price: "1500원",
+      state: true,
+      src: "img/calculator.png",
+    },
+    {
+      index: "4",
+      title: "C프로그래밍 교재",
+      price: "2000원",
+      state: true,
+      src: "img/coding.png",
+    },
+    {
+      index: "5",
+      title: "우산",
+      price: "1000원",
+      state: true,
+      src: "img/umbrella.png",
+    },
+    {
+      index: "6",
+      title: "무선키보드",
+      price: "5000원",
+      state: true,
+      src: "img/keyboard.png",
+    },
+    {
+      index: "7",
+      title: "자바프로그래밍 교재",
+      price: "2000원",
+      state: true,
+      src: "img/java.png",
+    },
+    {
+      index: "8",
+      title: "공책",
+      price: "2000원",
+      state: true,
+      src: "img/note.png",
+    },
+    {
+      index: "9",
+      title: "컴퓨터사인펜",
+      price: "1000원",
+      state: true,
+      src: "img/computerPen.png",
+    },
+    {
+      index: "10",
+      title: "토익 교재",
+      price: "2000원",
+      state: true,
+      src: "img/toeic.png",
+    },
+    {
+      index: "11",
+      title: "줄 이어폰",
+      price: "1000원",
+      state: true,
+      src: "img/earphone.png",
+    },
+    {
+      index: "12",
+      title: "무선 이어폰",
+      price: "1500원",
+      state: true,
+      src: "img/earphoneNo.png",
+    },
   ];
 
   return (
@@ -73,6 +145,7 @@ const Rent = () => {
             ? products.map((product) => {
                 return (
                   <ProductBoxAll
+                    src={product.src}
                     index={product.index}
                     title={product.title}
                     price={product.price}
@@ -82,6 +155,7 @@ const Rent = () => {
             : products.map((product) => {
                 return (
                   <ProductBoxAll
+                    src={product.src}
                     index={product.index}
                     title={product.title}
                     price={"학교 제품"}

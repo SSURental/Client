@@ -27,7 +27,7 @@ const Login = () => {
 
     console.log(loginApi);
 
-    if (loginApi.status === 201) {
+    if (loginApi.status === 200) {
       localStorage.setItem("token", loginApi.data);
       navigate("/");
     }
