@@ -4,7 +4,9 @@ const Review = (props) => {
   return (
     <div className="reviewContainer">
       <div className="reviewUserProfile">
-        <div className="reviewUserProfileImage"></div>
+        <div className="reviewUserProfileImage">
+          <img src={props.src} className="reviewUserProfileImg"></img>
+        </div>
         <div className="reviewUserProfileDetail">
           <div className="reviewUserProfileDetailName">{props.userId}</div>
           <div className="reviewUserProfileDetailGrade">{props.userGrade}</div>

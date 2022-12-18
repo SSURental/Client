@@ -2,10 +2,20 @@ import React from "react";
 import { BiSearch } from "react-icons/bi";
 import { BsBellFill } from "react-icons/bs";
 import { FaUserCircle, FaUserPlus } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const token = localStorage.getItem("token");
+
+  const naviagate = useNavigate();
+
+  const handleMoveToMyPage = () => {
+    naviagate("/myPage");
+  };
+
+  const handleMoveToLoginPage = () => {
+    naviagate("/login");
+  };
 
   return (
     <>
@@ -82,29 +92,27 @@ const Navbar = () => {
                 </span>
               </li>
               <li className="navbarMypageIcon">
-                <Link to="/login">
-                  {token === null ? (
-                    <span>
-                      <FaUserPlus
-                        color="#C2C2C2"
-                        size="35px"
-                        style={{
-                          cursor: "pointer",
-                        }}
-                      />
-                    </span>
-                  ) : (
-                    <span>
-                      <FaUserCircle
-                        color="#C2C2C2"
-                        size="35px"
-                        style={{
-                          cursor: "pointer",
-                        }}
-                      />
-                    </span>
-                  )}
-                </Link>
+                {token === null ? (
+                  <span onClick={handleMoveToLoginPage}>
+                    <FaUserPlus
+                      color="#C2C2C2"
+                      size="35px"
+                      style={{
+                        cursor: "pointer",
+                      }}
+                    />
+                  </span>
+                ) : (
+                  <span onClick={handleMoveToMyPage}>
+                    <FaUserCircle
+                      color="#C2C2C2"
+                      size="35px"
+                      style={{
+                        cursor: "pointer",
+                      }}
+                    />
+                  </span>
+                )}
               </li>
             </ul>
           </div>

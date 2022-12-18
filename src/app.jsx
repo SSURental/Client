@@ -10,6 +10,7 @@ import Product from "./components/product";
 import ProductEnroll from "./pages/productEnroll";
 import Article from "./components/article";
 import ArticleEnroll from "./pages/articleEnroll";
+import MyPage from "./pages/myPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/rent/enroll" element={<ProductEnroll />}></Route>
           <Route exact path="/board/article" element={<Article />}></Route>
           <Route exact path="/board/enroll" element={<ArticleEnroll />}></Route>
+          <Route exact path="/myPage" element={<MyPage />}></Route>
         </Routes>
       </BrowserRouter>
     </>

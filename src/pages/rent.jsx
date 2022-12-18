@@ -9,7 +9,7 @@ const Rent = () => {
 
   const navigate = useNavigate();
 
-  const products = [
+  const studentProducts = [
     {
       index: "1",
       title: "볼펜",
@@ -96,6 +96,93 @@ const Rent = () => {
     },
   ];
 
+  const schoolProducts = [
+    {
+      index: "1",
+      title: "우산",
+      price: "1000원",
+      state: true,
+      src: "img/umbrella.png",
+    },
+    {
+      index: "2",
+      title: "노트북",
+      price: "3000원",
+      state: true,
+      src: "img/notebook.png",
+    },
+    {
+      index: "3",
+      title: "공학용 계산기",
+      price: "1500원",
+      state: true,
+      src: "img/calculator.png",
+    },
+    {
+      index: "4",
+      title: "노트북 충전기",
+      price: "2000원",
+      state: true,
+      src: "img/charger.png",
+    },
+    {
+      index: "5",
+      title: "천막",
+      price: "20000원",
+      state: true,
+      src: "img/tent.png",
+    },
+    {
+      index: "6",
+      title: "돗자리",
+      price: "5000원",
+      state: true,
+      src: "img/mat.png",
+    },
+    {
+      index: "7",
+      title: "멀티탭",
+      price: "2000원",
+      state: true,
+      src: "img/multitap.png",
+    },
+    {
+      index: "8",
+      title: "모니터",
+      price: "2000원",
+      state: true,
+      src: "img/monitor.png",
+    },
+    {
+      index: "9",
+      title: "스피커",
+      price: "1000원",
+      state: true,
+      src: "img/speaker.png",
+    },
+    {
+      index: "10",
+      title: "헤드셋",
+      price: "2000원",
+      state: true,
+      src: "img/headset.png",
+    },
+    {
+      index: "11",
+      title: "줄 이어폰",
+      price: "1000원",
+      state: true,
+      src: "img/earphone.png",
+    },
+    {
+      index: "12",
+      title: "무선 이어폰",
+      price: "1500원",
+      state: true,
+      src: "img/earphoneNo.png",
+    },
+  ];
+
   return (
     <div className="totalPage">
       {isClicked === false ? (
@@ -142,26 +229,32 @@ const Rent = () => {
         </div>
         <div className="rentProductContainer">
           {isClicked === !true
-            ? products.map((product) => {
-                return (
-                  <ProductBoxAll
-                    src={product.src}
-                    index={product.index}
-                    title={product.title}
-                    price={product.price}
-                  />
-                );
-              })
-            : products.map((product) => {
-                return (
-                  <ProductBoxAll
-                    src={product.src}
-                    index={product.index}
-                    title={product.title}
-                    price={"학교 제품"}
-                  />
-                );
-              })}
+            ? studentProducts
+                .slice(0)
+                .reverse()
+                .map((product) => {
+                  return (
+                    <ProductBoxAll
+                      src={product.src}
+                      index={product.index}
+                      title={product.title}
+                      price={product.price}
+                    />
+                  );
+                })
+            : schoolProducts
+                .slice(0)
+                .reverse()
+                .map((product) => {
+                  return (
+                    <ProductBoxAll
+                      src={product.src}
+                      index={product.index}
+                      title={product.title}
+                      price={"학교 제품"}
+                    />
+                  );
+                })}
         </div>
       </div>
     </div>
