@@ -11,6 +11,7 @@ import ProductEnroll from "./pages/productEnroll";
 import Article from "./components/article";
 import ArticleEnroll from "./pages/articleEnroll";
 import MyPage from "./pages/myPage";
+import ProductRent from "./pages/productRent";
 
 function App() {
   return (
@@ -28,6 +29,11 @@ function App() {
           <Route exact path="/board/article" element={<Article />}></Route>
           <Route exact path="/board/enroll" element={<ArticleEnroll />}></Route>
           <Route exact path="/myPage" element={<MyPage />}></Route>
+          <Route
+            exact
+            path="/rent/product/productRent"
+            element={<ProductRent />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </>

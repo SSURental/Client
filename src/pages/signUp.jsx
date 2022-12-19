@@ -57,6 +57,18 @@ const SignUp = () => {
       </Link>
       <div className="signUpTitle">회원가입</div>
       <div className="signUpNameInputContainer">
+        <div className="signUpNameInputTitle">프로필 이미지</div>
+        <div className="signUpNameInput">
+          <input
+            id="signUpInputName"
+            type="file"
+            name="name"
+            placeholder="실명을 입력하세요."
+            onChange={handleNameChange}
+          ></input>
+        </div>
+      </div>
+      <div className="signUpNameInputContainer">
         <div className="signUpNameInputTitle">이름</div>
         <div className="signUpNameInput">
           <input

@@ -12,7 +12,9 @@ const MyPageListBox = (props) => {
             <div className="mypageListBoxTitle">{props.title}</div>
             <div className="mypageListBoxDueDate">{props.date}</div>
           </div>
-          <div className="mypageListBoxBtn">반납</div>
+          <div className="mypageListBoxBtn" style={{ cursor: "pointer" }}>
+            반납
+          </div>
         </div>
       </div>
     </>

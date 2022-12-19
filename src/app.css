@@ -429,6 +429,12 @@
   border-radius: 50px;
 }
 
+.articleBoxProfileImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
 .articleBoxProfileName {
   font-size: 18px;
   font-weight: bold;
@@ -861,6 +867,21 @@
 
 /* 상품 등록 창 */
 
+.productEnrollInformation {
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.productEnrollInformationTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.productEnrollInformationText {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 .productEnrollTitle {
   font-size: 40px;
   font-weight: bold;
@@ -980,6 +1001,12 @@
   margin-top: 20px;
   margin-left: 140px;
   margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.productEnrollDetailInputText {
+  margin-bottom: 20px;
 }
 
 #productEnrollDetailInput {
@@ -1303,7 +1330,40 @@
   text-align: center;
   font-size: 25px;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modalContentsText {
+  margin-bottom: 30px;
+  width: 430px;
+  height: 300px;
+  font-size: 20px;
+  font-family: "Noto Sans KR";
+}
+
+.modalContentsTexts {
   margin-bottom: 70px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.modalContentsDateText {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modalContentsDate {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#modalContentsDate {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .modalButton {
@@ -2153,8 +2213,8 @@
 
 .mypageListBoxTitle {
   margin-top: 10px;
-  width: 50px;
-  font-size: 22px;
+  width: 150px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -2212,4 +2272,182 @@
 .writeDelete {
   margin-top: 10px;
   margin-right: 50px;
+}
+
+/* 채팅 창 */
+.chatUserContainer {
+  padding: 0 120px 0 120px;
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatUser {
+  display: flex;
+}
+
+.chatBtn {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chatUserText {
+  height: 80px;
+  line-height: 37px;
+  margin-left: 30px;
+}
+
+.chatUserName {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.chatUserDetail {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.chatUserImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+}
+
+.chatList {
+  width: 120px;
+  height: 60px;
+  background-color: #68c9d1;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.chatUserReport {
+  margin-left: 20px;
+  width: 120px;
+  height: 60px;
+  background-color: #e1605c;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.chatSlider {
+  width: 83%;
+  margin: 20px auto;
+  height: 3px;
+  background-color: #eeeeee;
+}
+
+.chatInputContainer {
+  margin: 0 auto;
+  width: 83%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid #eeeeee;
+  border-radius: 10px;
+}
+
+.chatInputText {
+  width: 700px;
+  line-height: 60px;
+  margin-left: 20px;
+  border: none;
+  font-size: 18px;
+  font-family: "Noto Sans KR";
+  appearance: none;
+  text-decoration: none;
+  outline: 0;
+}
+
+.chatSubmit {
+  margin-top: 10px;
+  margin-right: 20px;
+  height: 50px;
+  width: 100px;
+  line-height: 50px;
+  background-color: #68c9d1;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.chatUI {
+  height: 63vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.chatTextContainer {
+  padding: 0 120px 0 120px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.chatTextUserContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.chatTextNotUserContainer {
+  display: flex;
+}
+
+.chatTextUser {
+  text-align: right;
+  line-height: 70px;
+  padding: 0 20px 0 20px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.chatTextUserTime {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 60px;
+}
+
+.chatTextNotUser {
+  text-align: left;
+  line-height: 70px;
+  padding: 0 20px 0 20px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #68c9d1;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.chatTextNotUserTime {
+  color: #68c9d1;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 60px;
+}
+
+.modalContentsDateText {
 }

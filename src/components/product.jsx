@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "./navbar";
 import Review from "./review";
 
 const Product = () => {
   const { state } = useLocation();
+
+  const navigate = useNavigate();
 
   const productImgSrc = "../" + state.src;
 
@@ -73,18 +75,16 @@ const Product = () => {
                 <div className="productUserProfileDetail">
                   <div className="productUserProfileDetailName">스폰지밥</div>
                   <div className="productUserProfileDetailComment">
-                    대학교 1학년
+                    대학교 2학년
                   </div>
                 </div>
               </div>
-              <div className="productUserChatBtn">채팅하기</div>
+              <div className="productUserChatBtn">신고하기</div>
             </div>
             <div className="productSidebar"></div>
             <div className="productTitle">{state.title}</div>
             <div className="productPrice">{state.price}</div>
-            <div className="productComment">
-              완전 새거이고 쓰는 데 딱히 큰 지장을 없을 거에요!!
-            </div>
+            <div className="productComment">막 쓰셔도 돼요!</div>
             <div className="productBtn">
               <div
                 className="productLikeBtn"
@@ -93,7 +93,12 @@ const Product = () => {
                 좋아요
                 <span className="productLikeNum">{likeCount}</span>
               </div>
-              <div className="productPurchaseBtn">대여하기</div>
+              <div
+                className="productPurchaseBtn"
+                onClick={() => navigate("/chat")}
+              >
+                대여하기
+              </div>
             </div>
           </div>
         </div>

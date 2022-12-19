@@ -12,7 +12,9 @@ const ArticleBoxAll = (props) => {
             navigate("/board/article", { state: props });
           }}
         >
-          <div className="articleBoxProfileImage"></div>
+          <div className="articleBoxProfileImage">
+            <img src={props.src} className="articleBoxProfileImg"></img>
+          </div>
           <div className="articleBoxProfile">
             <div className="articleBoxProfileName">{props.name}</div>
             <div className="articleBoxProfileGrade">{props.grade}</div>

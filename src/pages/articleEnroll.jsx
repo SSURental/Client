@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/navbar";
 
 const ArticleEnroll = () => {
+  const navigate = useNavigate();
   return (
     <div className="totalPage">
       <Navbar />
@@ -25,7 +27,12 @@ const ArticleEnroll = () => {
         <div className="articleEnrollSidebar"></div>
         <div className="articleEnrollBtnContainer">
           <div className="articleEnrollBtn">
-            <input id="articleEnrollBtn" type="submit" value="등록하기" />
+            <input
+              id="articleEnrollBtn"
+              type="submit"
+              value="등록하기"
+              onClick={() => navigate("/board")}
+            />
           </div>
         </div>
       </div>

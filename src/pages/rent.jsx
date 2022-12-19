@@ -242,19 +242,16 @@ const Rent = () => {
                     />
                   );
                 })
-            : schoolProducts
-                .slice(0)
-                .reverse()
-                .map((product) => {
-                  return (
-                    <ProductBoxAll
-                      src={product.src}
-                      index={product.index}
-                      title={product.title}
-                      price={"학교 제품"}
-                    />
-                  );
-                })}
+            : schoolProducts.map((product) => {
+                return (
+                  <ProductBoxAll
+                    src={product.src}
+                    index={product.index}
+                    title={product.title}
+                    price={"학교 제품"}
+                  />
+                );
+              })}
         </div>
       </div>
     </div>
