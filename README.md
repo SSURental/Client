@@ -13,3 +13,7 @@
 ![슬라이드11](https://user-images.githubusercontent.com/67940557/209674883-ce8ddc1b-9183-496c-b37d-9e36bdbf5f3e.png)
 <br></br>
 ## 🛠 Tech Stack
+<a href="" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/></a>
+<a href="" target="_blank"><img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/></a>
+<a href="" target="_blank"><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a>
+<a href="" target="_blank"><img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CCS3&logoColor=white"/></a>
