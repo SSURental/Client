@@ -7,8 +7,8 @@
 ![슬라이드8](https://user-images.githubusercontent.com/67940557/209674622-5cb4e4ee-d205-451e-ab9f-8267616d27c4.png)
 ### 메인 화면
 ![슬라이드9](https://user-images.githubusercontent.com/67940557/209674680-4a350dfd-6ec2-44ab-85d1-3acce03d0069.png)
-### 렌털 화면
-![슬라이드10](https://user-images.githubusercontent.com/67940557/209674806-f968cfa0-118c-4957-b0ed-533dedb9d00f.png)
+### 렌털 화
+![슬라이드10](https://user-images.githubusercontent.com/67940557/209675248-66616994-9e27-450b-a1c9-44bc6b819108.png)
 ### 게시판 화면
 ![슬라이드11](https://user-images.githubusercontent.com/67940557/209674883-ce8ddc1b-9183-496c-b37d-9e36bdbf5f3e.png)
 <br></br>
